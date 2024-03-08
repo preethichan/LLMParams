@@ -24,6 +24,7 @@ The above softmax function simply exponentiates each logit(x) and then divides i
 The temperature hyperparameter is the value of “T” applied to each of the logits, Let's say T=1, x_i/T will become 0, leading to random distribution and will use a creative output. 
 On the other hand, if T=0 small value will skew the probabilities into a deterministic output. 
 Let’s look at an example of how Temperature value affects the model outputs. I ran a small program using Openai LLM, gpt-4 model and keeping Top P= 1 for now. 
+
 text = f""" 
 Is there a way to keep things quiet?
 """
@@ -33,8 +34,9 @@ complete the sentence in 2 words.
 """
 
 Temperature	Output	
-0	Yes, Silence.
-1	Noice Control
+0	          Yes, Silence.
+1	          Noice Control
+
 As we decrease the temperature the output is more generic and predictable. However, with higher temperature values the output is more specific and creative. 
 ### Top- p:
 Before getting into Top_p, let’s understand what Sampling is. In simplest terms, sampling means randomly picking the next word according to its conditional probability distribution.
