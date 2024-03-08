@@ -33,9 +33,9 @@ complete the sentence in 2 words.
 ```{text}```
 """
 
-Temperature	Output	
-0	          Yes, Silence.
-1	          Noice Control
+## Temperature	## Output	
+0	              Yes, Silence.
+1	              Noice Control
 
 As we decrease the temperature the output is more generic and predictable. However, with higher temperature values the output is more specific and creative. 
 ### Top- p:
