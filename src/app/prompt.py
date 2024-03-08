@@ -25,7 +25,7 @@ questions = [("if I have an iphone and a projector, how do I connect them?", "gi
              ]
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key="")
 COMPLETIONS_MODEL = "gpt-4"
 
 
